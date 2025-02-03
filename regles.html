@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CALCULATEURS MEDICAUX</title>
+        <!-- Inclusion du fichier JavaScript pour les fonctionnalités interactives -->
+        <script src="script.js"></script>
+        <!-- Inclusion du fichier CSS pour la mise en forme de la page -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <h1>CALCULATEURS MEDICAUX</h1> <!-- Titre principal de la page -->
+        
+        <header>
+            
+            <!-- Barre de navigation principale -->
+            <nav>
+                <ul>
+                    <li><a href="accueil.html" target="_self">Accueil</a></li>
+                    <li><a href="imc.html" target="_self">Calculateur d'IMC</a></li>
+                    <li><a href="glasgow.html" target="_self">Score de Glasgow</a></li>
+                    <li><a href="regles.html" target="_self">Calculateur Règles et Ovulation</a></li>
+                    <li><a href="surface-corporelle.html" target="_self">Calculateur de Surface Corporelle (BSA)</a></li>
+                    <li><a href="divers.html" target="_self">Divers/Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Section Description du cycle menstruel -->
+        <section id="description-regles">
+            
+            <h2>DESCRIPTION DU CYCLE MENSTRUEL</h2>
+            
+            <img src="regles.gif" alt="Image cycle menstruel"> <!-- Image illustrant le cycle menstruel -->
+                                    
+            <p> Le cycle menstruel est divisé en trois phases : la phase folliculaire, l'ovulation et la phase lutéale. La durée de ces phases peut varier, rendant le calcul de l'ovulation plus complexe pour certaines personnes. Si le cycle est régulier (28 jours), l'ovulation qui correspond à la période où la femme est la plus fertile survient généralement 14 jours avant les règles. Cependant, chaque cycle est différent : certains sont plus longs, plus courts ou irréguliers. Connaître son cycle permet non seulement d'augmenter ses chances de tomber enceinte, mais aussi de mieux anticiper la date de ses prochaines règles.</p>
+            
+            <p>Pour calculer la durée de votre cycle, comptez les jours entre le premier jour de vos règles et la veille des suivantes.</p>
+            
+        </section>
+    
+        <!-- Section Calculateur de règles et ovulation -->
+        <section id="regles">
+            
+            <h2>CALCULATEUR DE REGLES ET D'OVULATION</h2>
+            
+            <form id="calc-regles">
+                
+                <!-- Champ de saisie pour la date des dernières règles -->
+                <label for="dernieres-regles">Date de début de vos dernières règles :</label>
+                <input type="date" id="dernieres-regles" required><br>
+    
+                <!-- Champ de saisie pour la durée moyenne du cycle -->
+                <label for="cycle">Durée moyenne de votre cycle (en jours) :</label>
+                <input type="number" id="cycle" min="21" max="35" required><br><br>
+    
+                <!-- Bouton centré pour le calcul -->
+                <div class="center-button">
+                    <button type="button" id="button-regles" onclick="calculRegles()">Calculer</button><br>
+                </div>
+    
+                <!-- Champs pour afficher les résultats des calculs -->
+                <label for="resultat-regles">Prochaine période de règles prévue :</label>
+                <input type="text" id="resultat-regles" readonly><br>
+    
+                <label for="resultat-ovulation">Date estimée de l'ovulation :</label>
+                <input type="text" id="resultat-ovulation" readonly>
+                
+            </form>
+            
+        </section>
+        
+        <footer> <strong>Copyright © 2025 Hawa WAGUE</strong></footer>
+        
+    </body>
+
+</html>

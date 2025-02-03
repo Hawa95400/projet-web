@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>CALCULATEURS MEDICAUX</title>
+        <!-- Inclusion du fichier JavaScript pour les fonctionnalités interactives -->
+        <script src="script.js"></script>
+        <!-- Inclusion du fichier CSS pour la mise en forme de la page -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1>CALCULATEURS MEDICAUX</h1> <!-- Titre principal de la page -->
+        
+        <header>
+            
+            <!-- Barre de navigation principale -->
+            <nav>
+                <ul>
+                    <li><a href="accueil.html" target="_self">Accueil</a></li>
+                    <li><a href="imc.html" target="_self">Calculateur d'IMC</a></li>
+                    <li><a href="glasgow.html" target="_self">Score de Glasgow</a></li>
+                    <li><a href="regles.html" target="_self">Calculateur Règles et Ovulation</a></li>
+                    <li><a href="surface-corporelle.html" target="_self">Calculateur de Surface Corporelle (BSA)</a></li>
+                    <li><a href="divers.html" target="_self">Divers/Contact</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    
+        <!-- Section Description du Score de Glasgow -->
+        <section id="description-glasgow">
+            
+            <h2>DESCRIPTION DU SCORE DE GLASGOW</h2>
+            
+            <!-- Image illustrant le cerveau -->
+            <img src="cerveau.gif" alt="Image cerveau">
+    
+            <p>Le Score de Glasgow est une échelle médicale utilisée pour évaluer l'état de conscience d'une personne victime d'un traumatisme crânien. Cet outil est essentiel pour les équipes médicales d'urgence afin d'estimer la gravité des lésions cérébrales et d'orienter le patient vers les soins adaptés.</p>
+    
+            <p>Le score varie entre 3 (coma profond) et 15 (conscience normale). Il se calcule en évaluant trois paramètres :</p>
+    
+            <!-- Liste des paramètres évalués pour calculer le score de Glasgow -->
+            <ul>
+                <li><strong>L'ouverture des yeux </strong></li>
+                <li><strong>La réponse verbale </strong></li>
+                <li><strong>La réponse motrice </strong></li>
+            </ul>
+    
+            <p>Cette échelle permet de suivre l'évolution du patient, avec une meilleure récupération probable pour les scores élevés.</p>
+       
+        </section>
+    
+        <!-- Section Calcul du Score de Glasgow -->
+        <section id="glasgow">
+            
+            <h2>CALCUL DU SCORE DE GLASGOW</h2>
+            
+            <form id="calc-glasgow">
+                
+                <!-- Sélection de l'ouverture des yeux -->
+                <label for="reponse1">Ouverture des yeux :</label>
+                <select id="reponse1">
+                    <option value="4">Spontanée</option>
+                    <option value="3">À la demande</option>
+                    <option value="2">À la douleur</option>
+                    <option value="1">Aucune</option>
+                </select><br>
+    
+                <!-- Sélection de la réponse verbale -->
+                <label for="reponse2">Réponse verbale :</label>
+                <select id="reponse2">
+                    <option value="5">Orientée</option>
+                    <option value="4">Confuse</option>
+                    <option value="3">Paroles inappropriées</option>
+                    <option value="2">Sons incompréhensibles</option>
+                    <option value="1">Aucune</option>
+                </select><br>
+    
+                <!-- Sélection de la réponse motrice -->
+                <label for="reponse3">Réponse motrice :</label>
+                <select id="reponse3">
+                    <option value="6">Obéit aux commandes</option>
+                    <option value="5">Localise la douleur</option>
+                    <option value="4">Retrait à la douleur</option>
+                    <option value="3">Flexion anormale (décortication)</option>
+                    <option value="2">Extension anormale (décérébration)</option>
+                    <option value="1">Aucune</option>
+                </select><br><br>
+    
+                <!-- Bouton centré pour calculer le score -->
+                <div class="center-button">
+                    <button type="button" id="button-glasgow" onclick="calculGlasgow()">Calculer le Score</button>
+                </div><br>
+    
+                <!-- Champ pour afficher le score de Glasgow -->
+                <label for="score-glasgow">Votre Score de Glasgow :</label>
+                <input type="text" id="score-glasgow" readonly><br>
+    
+                <!-- Champ pour afficher l'interprétation du score de Glasgow -->
+                <label for="interpretation">Interprétation du Score :</label>
+                <input type="text" id="interpretation" readonly>
+                
+            </form>
+            
+        </section>
+        
+        <footer> <strong>Copyright © 2025 Hawa WAGUE</strong></footer>
+        
+    </body>
+    
+</html>    

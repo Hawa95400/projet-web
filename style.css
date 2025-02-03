@@ -1,0 +1,293 @@
+/* Section Accueil */
+section#accueil {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section#accueil h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+section#accueil p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+section#accueil ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#accueil strong {
+    color: lightskyblue;
+}
+
+section#accueil ul li {
+    padding: 15px;
+    margin: 5px 0;
+    border-left: 5px solid lightskyblue;
+}
+
+
+
+
+
+/* Sections Description IMC Règles et Moi */
+section#description-imc, 
+section#description-regles,
+section#moi {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section#description-imc h2, 
+section#description-regles h2,
+section#moi h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+section#description-imc p, 
+section#description-regles p,
+section#moi p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section#description-imc strong, 
+section#description-regles strong{
+    color: #e6005c;
+}
+
+section#description-imc .formule, 
+section#description-regles .formule {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e6005c;
+    margin: 20px 0;
+}
+
+section#moi a {
+    color: #e6005c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Sections Calculs IMC et Règles */
+section#imc, 
+section#regles {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section#imc h2, 
+section#regles h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+#button-imc, 
+#button-regles {
+    background-color: #e6005c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Sections Description Glasgow et BSA */
+section#description-glasgow, 
+section#description-bsa {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section#description-glasgow h2, 
+section#description-bsa h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+section#description-glasgow p, 
+section#description-bsa p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+section#description-glasgow li, 
+section#description-bsa li {
+    font-weight: bold;
+    color: lightskyblue;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+/* Sections Calculs Glasgow et BSA */
+section#glasgow, 
+section#bsa {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section#glasgow h2, 
+section#bsa h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#button-glasgow, 
+#button-surface {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Formulaires */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+
+
+
+
+/* Centre les boutons */
+div.center-button {
+    text-align: center;
+}
+
+
+
+
+
+/* Header, Titre et navigation */
+h1 {
+    color: white; 
+    text-align: center;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: black;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* Images */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+
+
+/* Body avec un fond en image médicale*/
+body {
+    background-image: url("fond4.jpg");
+    background-size: cover;
+    background-position: center;
+}

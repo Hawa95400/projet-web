@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>CALCULATEURS MEDICAUX</title>
+        <!-- Inclusion du fichier JavaScript pour les fonctionnalités -->
+        <script src="script.js"></script>
+        <!-- Inclusion du fichier CSS pour la mise en forme -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>CALCULATEURS MEDICAUX</h1> <!-- Titre principal de la page -->
+        
+        <header>
+            
+            <!-- Barre de navigation principale -->
+            <nav>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="imc.html">Calculateur d'IMC</a></li>
+                    <li><a href="glasgow.html">Score de Glasgow</a></li>
+                    <li><a href="regles.html">Calculateur Règles et Ovulation</a></li>
+                    <li><a href="surface-corporelle.html">Calculateur de Surface Corporelle (BSA)</a></li>
+                    <li><a href="divers.html">Divers/Contact</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    
+        <!-- Section Description de l'IMC -->
+        <section id="description-imc">
+            <h2>DESCRIPTION DE L'IMC</h2>
+            <img src="imc.jpg" alt="Image d'IMC"> <!-- Image illustrant l'IMC -->
+            
+            <p>L'indice de masse corporelle (IMC) ou Body Mass Index (BMI) en anglais permet d'évaluer rapidement votre corpulence en utilisant simplement votre poids et votre taille. Cet indice est validé par l'Organisation mondiale de la santé (OMS) pour évaluer la corpulence d'un individu et les risques pour la santé.</p>
+            
+            <p>Le calcul de l'IMC est donné par la formule :</p>
+            
+            <div class="formule">
+                IMC = Poids (kg) / Taille (m)<sup>2</sup>
+            </div>
+            
+            <p>Voici les interprétations de l'IMC selon l'OMS :</p>
+            
+            <!-- Liste des interprétations de l'IMC -->
+            <ul>
+                <li><strong>Moins de 18,5 :</strong> Insuffisance pondérale (maigreur)</li>
+                <li><strong>18,5 à 25 :</strong> Corpulence normale</li>
+                <li><strong>25 à 30 :</strong> Surpoids</li>
+                <li><strong>30 à 35 :</strong> Obésité modérée</li>
+                <li><strong>Plus de 40 :</strong> Obésité sévère</li>
+            </ul>
+            
+        </section>
+    
+        <!-- Section Calculateur d'IMC -->
+        <section id="imc">
+            <h2>CALCULATEUR D'IMC</h2>
+            
+            <form id="calc-imc" onsubmit="calcul(event)">
+                
+                <!-- Champ de saisie pour la taille -->
+                <label for="taille">Taille (en m) :</label>
+                <input type="number" id="taille" step="0.01" required><br>
+                
+                <!-- Champ de saisie pour le poids -->
+                <label for="poids">Poids (en kg) :</label>
+                <input type="number" id="poids" step="0.1" required><br><br>
+                
+                <!-- Bouton pour lancer la fonction de calcul de l'IMC -->
+                <div class="center-button">
+                    <button type="submit" id="button-imc">Calculer l'IMC</button>
+                </div><br>
+                
+                <!-- Champs pour afficher les résultats du calcul de l'IMC -->
+                <label for="score-IMC">Votre IMC est :</label>
+                <input type="text" id="score-IMC" readonly>
+                <input type="text" id="interprétation" readonly>
+            </form>
+            
+        </section>
+        
+        <footer> <strong>Copyright © 2025 Hawa WAGUE</strong></footer>
+    
+    </body>
+    
+</html>
